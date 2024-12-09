@@ -1,0 +1,32 @@
+.not-found-container {
+  display: flex;
+  min-height: calc(100vh - 144px);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.error {
+  color: var(--red-color);
+  font-size: 95px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.heading-error {
+  font-size: 33px;
+  color: var(--seondary-color);
+  margin-bottom: 40px;
+}
+.to-home {
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  width: fit-content;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 25px;
+  transition: 0.15s all ease-in-out;
+}
+.to-home:hover {
+  background-color: var(--secondary-color);
+}

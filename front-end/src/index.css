@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #efefef;
+  --primary-color: #1d2d3d;
+  --secondary-color: #495e74;
+  --gray-color: #a6aeb774;
+  --dark-color: #292b2c;
+  --blue-color: #0275d8;
+  --green-color: #27ae60;
+  --green-sea-color: #16a085;
+  --pumpkin-color: #e8720a;
+  --red-color: #d9534f;
+  --white-color: #fff;
+}
+
+body {
+  /* background-color: var(--main-color); */
+  font-family: "Cairo", serif; /* overflow-x: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Some Global Classes For icons */
+.bi-pencil-square {
+  color: var(--green-sea-color);
+  margin-right: 15px;
+}
+
+.bi-trash-fill {
+  color: var(--red-color);
+}
+
+/* Scrollbar Classes For Google Chrome */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(187, 179, 179);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-color);
+  border-radius: 25px;
+}

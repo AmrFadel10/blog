@@ -1,0 +1,123 @@
+.container-table-page {
+  display: flex;
+  min-height: calc(100vh - 130px);
+}
+
+.admin-table {
+  flex: 10;
+  padding: 10px;
+}
+
+.title-header {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 5px;
+  font-size: 30px;
+  color: var(--secondary-color);
+  width: max-content;
+}
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.table-container th {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 15px;
+}
+
+.img-and-name {
+  display: flex;
+  text-align: center;
+  /* justify-content: center; */
+}
+.img-and-name .tabel-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.img-and-name span {
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 10px;
+  align-self: center;
+}
+td,
+th {
+  border: 1px solid var(--gray-color);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.table-btns-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+.table-btns-group > button {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+
+.table-btns-group button:first-child {
+  margin-right: 15px;
+  background-color: var(--green-color);
+}
+.table-btns-group > button:nth-child(2) {
+  background-color: var(--red-color);
+}
+.table-btns-group button:first-child:hover {
+  color: var(--white-color);
+  background-color: var(--green-sea-color);
+}
+.table-btns-group > button:nth-child(2):hover {
+  color: var(--white-color);
+  background-color: red;
+}
+.table-btns-group > button a {
+  color: var(--main-color);
+}
+
+@media (max-width: 990px) {
+  .table-btns-group > button:nth-child(1) {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .table-btns-group > button {
+    font-size: 18px;
+  }
+  td,
+  th {
+    font-size: 18px;
+  }
+  .table-btns-group {
+    flex-direction: column;
+  }
+  .img-and-name {
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+  }
+}
+@media (max-width: 720px) {
+  .table-btns-group > button {
+    font-size: 16px;
+  }
+  td,
+  th {
+    font-size: 16px;
+  }
+  .img-and-name {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-and-name span {
+    margin-left: 0;
+  }
+}

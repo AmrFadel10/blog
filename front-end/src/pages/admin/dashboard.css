@@ -1,0 +1,153 @@
+.dashboard {
+	display: flex;
+	min-height: calc(100vh - 130px);
+}
+.sidebar-dashboard {
+	flex: 2;
+	padding: 20px;
+	border-right: 1px solid var(--gray-color);
+}
+.dashborad-header {
+	color: #1d1d1d;
+}
+.dashborad-header {
+	font-size: 28px;
+	font-weight: 500;
+	margin: 10px 0;
+	display: block;
+}
+.dashborad-header i {
+	margin-right: 5px;
+}
+
+.main-links {
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-weight: 500;
+}
+.main-links a {
+	color: var(--primary-color);
+	font-size: 23px;
+	padding: 15px 0;
+}
+.main-links a:hover {
+	color: #000;
+}
+.main-links a i {
+	margin-right: 10px;
+}
+
+.main-dashboard {
+	flex: 10;
+	padding: 20px;
+}
+.card-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 40px;
+
+	border-bottom: 2px solid var(--primary-color);
+}
+.card {
+	width: 23%;
+	padding: 15px;
+	border: 2px solid var(--gray-color);
+	border-radius: 12px;
+	margin: 20px 0 0 0;
+}
+.card .username {
+	font-size: 25px;
+	color: #777;
+	margin-bottom: 10px;
+}
+.card .count {
+	color: var(--pumpkin-color);
+	font-size: 25px;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.see-all {
+	display: flex;
+	justify-content: space-between;
+}
+.see-all a,
+.see-all i {
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+	color: var(--white-color);
+	font-size: 20px;
+}
+
+.see-all a {
+	background-color: #1d1d1d;
+}
+.see-all i {
+	background-color: #1d1d1d;
+}
+
+.add-category {
+	border-radius: 10px;
+	border: 3px solid #d1d1d1;
+	padding: 20px;
+	width: 50%;
+	margin: 60px auto 0;
+}
+.new-category-header {
+	margin-bottom: 15px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.add-cat-label {
+	font-size: 17px;
+	color: var(--secondary-color);
+	text-align: left;
+	margin-bottom: 10px;
+}
+.add-cat,
+.add-cat-btn {
+	width: 100%;
+	padding: 15px;
+	border-radius: 10px;
+	/* border: none; */
+	font-size: 20px;
+	margin: 10px 0 20px;
+}
+.add-cat-btn {
+	background-color: #1d1d1d;
+	color: var(--white-color);
+	border: none;
+	cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+	.sidebar-dashboard {
+		display: none;
+	}
+	/* .main-dashboard {
+    padding: 10px;
+  } */
+}
+
+@media (max-width: 1100px) {
+	.card {
+		width: 45%;
+	}
+	.add-category {
+		width: 100%;
+	}
+}
+
+@media (max-width: 720px) {
+	.card {
+		width: 100%;
+	}
+	.add-category {
+		width: 100%;
+	}
+}

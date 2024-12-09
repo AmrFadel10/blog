@@ -1,0 +1,12 @@
+.header-category {
+  padding-bottom: 10px;
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  font-size: 35px;
+  margin-bottom: 25px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+.cateory-conatainer {
+  padding: 20px;
+}
